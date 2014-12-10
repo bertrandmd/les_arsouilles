@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Arsouilles Rugby Club</title>
-
+    <link rel="stylesheet" href="css/Gallery-master/blueimp-gallery.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <link href='css/mapage-css.css' rel='stylesheet' type='text/css'>
@@ -37,10 +37,77 @@
     <img src="img/noun_58378.png" alt="fetesdeteyran" >
   </div>
 
+  <div>Les gaziers :</div>
+  <div id="1ligne">
+      <ul class="list-inline text-center">
+        <li><img src="img/icon/beb4.jpg" alt="beb" class="player 1ligne"></li>
+        <li><img src="img/icon/jaj.jpg" alt="jaja" class="player 1ligne"></li>
+        <li><img src="img/icon/medmed.jpg" alt="medmed" class="player 1ligne"></li>
+      </ul>
+  </div>
+  <div id="2ligne">
+        <ul class="list-inline text-center">
+          <li><img src="img/icon/maxou.jpg" alt="max" class="player 2ligne"></li>
+          <li><img src="img/icon/josé.jpg" alt="jose" class="player 2ligne"></li>
+        </ul>
+  </div>
+  <div id="3ligne">
+      <ul class="list-inline text-center">
+        <li><img src="img/icon/simon.jpg" alt="sim" class="player 3ligne"></li>
+        <li><img src="img/icon/guichou.jpg" alt="guichou" class="player 3ligne"></li>
+        <li><img src="img/icon/perrok.jpg" alt="perrok" class="player 3ligne"></li>
+      </ul>
+  </div>
+   <div id="demi">
+        <ul class="list-inline text-center">
+          <li><img src="img/icon/capde.jpg" alt="capde" class="player demi"></li>
+          <li><img src="img/icon/titou.jpg" alt="titou" class="player demi"></li>
+        </ul>
+  </div>
+  <div id="3/4">
+      <ul class="list-inline text-center">
+        <li><img src="img/icon/roro.jpg" alt="roro" class="player 3/4"></li>
+        <li><img src="img/icon/tim.jpg" alt="Tim" class="player 3/4"></li>
+        <li><img src="img/icon/dudu.jpg" alt="dunass" class="player 3/4"></li>
+        <li><img src="img/icon/ptd.jpg" alt="piero" class="player 3/4"></li>
+      </ul>
+  </div>
+  <div id="15">
+        <ul class="list-inline text-center">
+          <li><img src="img/icon/jga.jpg" alt="michou" class="player 15"></li>
+        </ul>
+  </div>
+
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+
+<div id="links">
+    <a href="images/banana.jpg" title="Banana">
+        <img src="images/thumbnails/banana.jpg" alt="Banana">
+    </a>
+    <a href="images/apple.jpg" title="Apple">
+        <img src="images/thumbnails/apple.jpg" alt="Apple">
+    </a>
+    <a href="images/orange.jpg" title="Orange">
+        <img src="images/thumbnails/orange.jpg" alt="Orange">
+    </a>
+</div>
+
+
+
+
+<!--
 <div id="vid1" class="embed-responsive embed-responsive-16by9">
   <iframe src="http://www.youtube.com/embed/2l8MejdfjLo"></iframe>
 </div>
-
+--> 
 
 <div class="text-center"><p>yeah !</p></div>
     <!-- TODO: Here goes your content! -->
@@ -59,5 +126,16 @@
     <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/Gallery-master/blueimp-gallery.min.js"></script>
+    <script>
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>
   </body>
 </html>
