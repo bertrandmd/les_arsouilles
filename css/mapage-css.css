@@ -7,10 +7,12 @@ body{
 h1{
   font-family: 'Lobster' ;
   color: #23AAFD;
+
 }
 h2{
   font-family: 'Open Sans', sans-serif;
-  color: #23AAFD;
+  /*color: #23AAFD;*/
+  margin:10px;
 }
 p{
   font-size: 16px;
@@ -28,16 +30,26 @@ p{
   background-size: cover;   
   font-family: 'Lobster' ;
   font-size: 30px;
+}
+#header img{
+  width: 25px;
 
 }
 #vid1{
    margin:50px;
 
 }
-
+#separator{
+  background-color:#3E5D9A;
+  padding: 15px;
+  color :#DADADA;
+}
 .features{
-  padding: 40px;
+  padding: 20px;
   font-weight: 300;
+}
+.features p{
+  padding:10px;
 }
 .features img{
   width: 100px;
@@ -45,19 +57,23 @@ p{
   border:3px solid black;
   border-radius: 50%;
 }
-.features img:hover{
+/*.features img:hover{
   //width:150px;
   img-color: steelblue;
   border-color: steelblue;
+}*/
+.container{
+  padding: 20px;
 }
 .player{
   width: 100px;
   padding: 15px;
   border:3px solid black;
-  border-radius: 50%;
+  /*border-radius: 50%;
 }
 .player:hover{
   width:120px;
+*/
 }
 #footer{
   padding: 30px;
@@ -70,4 +86,11 @@ p{
 }
 #footer a:hover{
   color: white;
+}
+#credit{
+  float: left;
+  font-size: 25px;
+}
+.copyright{
+  font-size: 5px;
 }
